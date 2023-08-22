@@ -29,9 +29,9 @@ class Player {
     constructor({position, velocity}){
         this.position = position        //we going to have a dynamic position
         this.velocity = velocity        //we need to make him move
-        this.radius = 12
+        this.radius = 15
         this.radians = 0.75
-        this.openRate = 0.20
+        this.openRate = 0.12
         this.rotation = 0
     }
     draw(){
@@ -61,14 +61,14 @@ class Player {
 
 // Creating Ghost
 class Ghost {
-    static speed = 5;
+    static speed = 2;
     constructor({position, velocity, color = "red"}){
         this.position = position        //we going to have a dynamic position
         this.velocity = velocity        //we need to make him move
         this.radius = 15
         this.color = color
         this.prevCollisions = []
-        this.speed = 5;
+        this.speed = 2;
         this.scared = false;
     }
     draw(){
